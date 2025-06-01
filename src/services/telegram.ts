@@ -119,9 +119,6 @@ class TelegramService {
     return [
       `*${statusEmoji} YENİ RANDEVU DURUMU *
 `,
-      `🏢 *Merkez:* ${this.escapeMarkdown(
-        appointment.center.replace(/\\s*-\\s*/g, "")
-      )}`,
       `🌍 *Ülke/Misyon:* ${this.escapeMarkdown(
         appointment.country_code.toUpperCase().replace(/\\s*-\\s*/g, "")
       )} \\\\-\\\*> ${this.escapeMarkdown(
